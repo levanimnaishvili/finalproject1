@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-color: #5F6472;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+h2,a,div,input{
+    font-family: "Roboto", sans-serif;
+}
+li{
+    text-transform: capitalize;
+}
+/* -------------------------*/
+.logo{
+    width: 152px;
+    height: 30px;
+    margin-top: 28px;
+    margin-left: 40px;
+}
+/* -------------------------*/
+.search{
+    display: none;
+    width: 90%;
+        margin-top: 32px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 40px;
+        border-radius: 10px;
+}
+.search input{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.search span{
+    position: relative;
+    top: -30px;
+    left: 6px;
+}
+/*-----LIST-----*/
+.listContainer{
+    width: 30%;
+    height: 76vh;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 66px;
+}
+.shipment-list{
+    width: 100%;
+    height: 76vh;
+    overflow-y: scroll;
+}
+.shipment-list:hover {
+    overflow-y: scroll;
+  }
+  .shipment-list::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+  }
+  .shipment-list::-webkit-scrollbar-thumb{
+    background-color: #ada9a970;
+    border-radius: 6px;
+  }
+  .shipment-list h1{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #979797;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+  }
+.shipmentlist{
+    height: 76vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #979797;
+    
+}
+.shipmentlist li{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.shipmentlist li:hover{
+    background: linear-gradient(90deg, rgba(45, 48, 56, 0) 22.92%, #2D3038 100%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+/*----INFO---*/
+
+.shipment-container{
+    width: 100%;
+    height: 76vh;
+    background: linear-gradient(124.01deg, #2D3038 0%, rgba(45, 48, 56, 0) 100%);
+    border-radius: 30px;
+    margin: 66px 52px 50px 44px;
+}
+
+.shipmentheader{
+    margin-top: 30px;
+    margin-left: 52px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 50px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.contact{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #979797;
+    margin-left: 52px;
+    text-transform: capitalize;
+}
+.cargo-boxes{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #979797;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 52px;
+    text-transform: uppercase;
+}
+.shipmentBox{
+    width: 30%;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 52px;
+    border: none;
+}
+.cargo-bays{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+    color: #979797;
+    margin-bottom: 2px;
+    margin-left: 52px;
+}
+.shipmentBays{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 66px;
+    color: #ffffff;
+    margin-left: 48px;
+}
+
+/*----------------------*/
+.burger{
+    display: none;
+    position: relative;
+    bottom: 84%;
+    left: 190%;
+    z-index: 101;
+    width: 35%;
+    height: 35%;
+    cursor: pointer;
+
+
+    user-select: none;
+
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: all .5s ease-in-out ;
+    transition: all .5s ease-in-out ;
+    transition: all .5s ease-in-out ;
+
+}
+
+
+
+.burger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color:#ffffff;
+    border-radius: 6px;
+    z-index: 100;
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+
+.burger:hover span:nth-child(2){
+    transform: translateX(10px);
+    transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+
+
+.burger.is-active span:nth-child(1){
+     transform: translate(0px, -2px) rotate(45deg);
+}
+
+.burger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+.burger.is-active span:nth-child(3){
+     transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+
+/*------FOR MOBILE-----*/
+@media only screen and (max-width: 420px) {
+    .burger{
+        display: block;
+        width: 15%;
+        padding-right: 10px;
+    }
+    
+    
+    .burger:hover span:nth-child(2){
+        -webkit-transform: translateX(0px);
+            -ms-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+    /* -------------------------*/
+    .logo{
+        width: 152px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+   /* -------------------------*/
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    /* -------------------------*/
+    .search{
+        display: block;
+    }
+    /* -------------------------*/
+    .listContainer{
+        margin-top: 0;
+        width: 100%;
+        display: none;
+    }
+    /* -------------------------*/
+    .shipmentheader{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .contact{
+        margin-left: 20px;
+    }
+    .cargo-boxes{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .shipmentBox{
+        width: 90%;
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+    .cargo-bays{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 34px;
+        margin-top: 30px;
+    }
+    .shipmentBays{
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px; 
+        margin-top: 10px;
+        text-align: center; 
+    }
+}

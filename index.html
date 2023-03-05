@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="img/Logo.png" alt=""> </a>
+            <button class="burger" id = "burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="search" id = "searchContainer">
+            <input type="text" id="search" placeholder="         Search" >
+            <span id = "span"><svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.3848 18.5775L15.4307 12.89C16.584 11.5292 17.2785 9.8 17.2785 7.91668C17.2785 3.55168 13.5603 0 8.99077 0C4.42121 0 0.703125 3.55164 0.703125 7.91664C0.703125 12.2816 4.42125 15.8333 8.99081 15.8333C10.9624 15.8333 12.7726 15.17 14.1972 14.0683L20.1512 19.7558C20.3213 19.9183 20.5447 20 20.768 20C20.9914 20 21.2147 19.9183 21.3848 19.7558C21.7259 19.43 21.7259 18.9033 21.3848 18.5775ZM8.99081 14.1666C5.38261 14.1666 2.44791 11.3633 2.44791 7.91664C2.44791 4.46996 5.38261 1.66664 8.99081 1.66664C12.599 1.66664 15.5337 4.46996 15.5337 7.91664C15.5337 11.3633 12.599 14.1666 8.99081 14.1666Z"
+                fill="black"/>
+                </svg>
+            </span>
+        </div>
+        <div class="listContainer"
+        id="listContainer">
+            <div class="shipment-list" id="shipment-list">
+                <h1>shipment list</h1>
+                <ul class="shipmentlist" id="shipmentlist"></ul>
+            </div>
+        </div>
+        
+        <div class="shipment-container" id="shipment-container">
+            <h2 class="shipmentheader" id="shipmentheader">name</h2>
+            <a class="contact" id="contact">contact</a>
+            <div class="cargo-boxes" id="cargo-boxes">cargo boxes</div>
+            <input class="shipmentBox" id="shipmentBox">
+            <div class="cargo-bays">Number of requiered cargo bays</div>
+            <div class="shipmentBays" id="shipmentBays"></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
